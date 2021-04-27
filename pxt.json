@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "adafruit-feather-m4-express": "*"
+        "adafruit-feather-m0-express": "*"
     },
     "files": [
         "README.md",
