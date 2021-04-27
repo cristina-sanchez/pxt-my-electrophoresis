@@ -20,7 +20,7 @@ enum timerunning{
     //% block="55 minutes"
     fiftyfiveminutes,
     //% block="60 minutes"
-    sixtyminutes, 
+    sixtyminutes 
 }
 //% color="#fec636" weight=100 icon="\uf0e7"
 namespace electrophoresis {
