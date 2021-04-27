@@ -23,7 +23,7 @@ enum timerunning{
 //% color="#fec636" weight=100 icon="\uf0e7"
 namespace electrophoresis {
 
-	* @param time, electrophoresis time eg: timerunning.thirtyminutes
+	/* @param time, electrophoresis time eg: timerunning.thirtyminutes
 	*/
 	//% block="Run the centrifugue during %time" blockGap=8
     
