@@ -5,6 +5,8 @@
  * generated for an **exported** function.
  */
 enum timerunning{
+	//% block="1 minute"
+    oneminute,
     //% block="30 minutes"
     thirtyminutes,
     //% block="35 minutes"
@@ -29,6 +31,12 @@ namespace electrophoresis {
     
     export function time_electrophoresis(time: timerunning) {void{
      switch (time){
+	case timerunning.oneminute:
+        pins.D10.digitalWrite(false)
+        pause(60*1000)
+        pins.D10.digitalWrite(true)
+	  ;
+	     
         case timerunning.thirtyminutes:
         pins.D10.digitalWrite(false)
         pause(30*60*1000)
