@@ -32,9 +32,9 @@ namespace electrophoresis {
      switch (time){
 	case timerunning.oneminute:
         pins.D10.digitalWrite(false)
-	
+	pixel.setColor(0xff0000)
         pause(60*1000)
-	
+	pixel.setColor(0xffff00)
         pins.D10.digitalWrite(true)
 		 ;
         case timerunning.thirtyminutes:
@@ -74,7 +74,7 @@ namespace electrophoresis {
 		;
 		   
      } 
-	
+	pixel.setColor(0x007fff)
     }
 
     // note that Caml casing yields lower case
