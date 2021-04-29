@@ -36,7 +36,7 @@ namespace electrophoresis {
      //% weight=100
      export function start_electrophoresis(start:on_off):void{
         switch (start){
-´           case on_off.turnon:
+            case on_off.turnon:
             pins.D12.digitalWrite(false) 
             ;
             case on_off.turnon:
