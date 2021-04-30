@@ -39,7 +39,7 @@ namespace electrophoresis {
             case on_off.turnon:
             pins.D12.digitalWrite(false) 
             ;
-            case on_off.turnon:
+            case on_off.turnoff:
             pins.D12.digitalWrite(true) 
             ;
         }
