@@ -37,10 +37,10 @@ namespace electrophoresis {
      export function start_electrophoresis(start:on_off):void{
         switch (start){
             case on_off.turnon:
-            pins.D12.digitalWrite(false) 
+            pins.D12.digitalWrite(low) 
             ;
             case on_off.turnoff:
-            pins.D12.digitalWrite(true) 
+            pins.D12.digitalWrite(high) 
             ;
         }
           
