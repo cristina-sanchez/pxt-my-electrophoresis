@@ -55,11 +55,11 @@ namespace electrophoresis {
     //% weight=90
     export function time_electrophoresis(time: timerunning): void {
      switch (time){
-	    case timerunning.oneminute:
+	case timerunning.oneminute:
         pins.D10.digitalWrite(false)
-	    pixel.setColor(0xff0000)
+	pixel.setColor(0xff0000)
         pause(60*1000)
-	    pixel.setColor(0xffff00)
+        pixel.setColor(0xffff00)
 		;
         case timerunning.thirtyminutes:
         pins.D10.digitalWrite(false)
@@ -91,9 +91,9 @@ namespace electrophoresis {
 		;
 		   
      } 
-    pins.D10.digitalWrite(true)
+    	pins.D10.digitalWrite(true)
 	pixel.setColor(0x007fff)
-    pins.D12.digitalWrite(true) 
+    	pins.D12.digitalWrite(true) 
     }
 
     // note that Caml casing yields lower case
