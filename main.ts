@@ -93,6 +93,7 @@ namespace electrophoresis {
      } 
     pins.D10.digitalWrite(true)
 	pixel.setColor(0x007fff)
+    pins.D12.digitalWrite(true) 
     }
 
     // note that Caml casing yields lower case
