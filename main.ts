@@ -35,12 +35,34 @@ namespace electrophoresis {
      //% block="Turn %start the electrophoresis" blockGap=8
      //% weight=100
      export function start_electrophoresis(start:on_off):void{
+	     
+	     pixel.setColor(0xff0000)//rojo
+	     pause(5000)
+	     
         switch (start){
+			
+		pixel.setColor(0x00ff00)//verde
+		pause(5000)
+			
             case on_off.turnon:
+			
+		pixel.setColor(0x007fff)//azul
+		pause(5000)
+			
             pins.D12.digitalWrite(false) 
+			
+		pixel.setColor(0xffffff)//BLANCO
+		pause(5000)
             ;
             case on_off.turnoff:
+		
+		pixel.setColor(0xffff00)//amarillo
+		pause(5000)
+			
             pins.D12.digitalWrite(true) 
+			
+		pixel.setColor(0xffffff)//BLANCO
+		pause(5000)
             ;
         }
           
