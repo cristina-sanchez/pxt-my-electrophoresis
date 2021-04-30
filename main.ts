@@ -5,9 +5,9 @@
  * generated for an **exported** function.
  */
 enum on_off{
-    //%block='on'
+    //%block="on"
     turnon,
-    //%block='off'
+    //%block="off"
     turnoff
 }
 enum timerunning{
