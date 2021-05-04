@@ -74,9 +74,7 @@ namespace electrophoresis {
 			pixel.setColor(0xffff00);//amarillo
 			break;
 		}
-		pixel.setColor(0xffffff);//BLANCO
-		pause(5000);
-		pixel.setColor(0xff0000);//rojo
+		
 		case timerunning.thirtyminutes: {
 			pins.D35.digitalWrite(false);
 			pause(30*60*1000);
