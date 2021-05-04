@@ -100,9 +100,9 @@ namespace electrophoresis {
 			pins.D10.digitalWrite(false)
 			pause(60*60*1000)
 			;
-		   
+	pixel.setColor(0xffffff)//BLANCO	   
     	} 
-	pixel.setColor(0xffffff)//BLANCO
+	
     	pins.D10.digitalWrite(true)
 	pixel.setColor(0x007fff)
     	
