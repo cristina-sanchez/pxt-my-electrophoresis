@@ -110,9 +110,7 @@ namespace electrophoresis {
 			break;
 		}	   
     	} 
-	music.baDing.play()
-	pause(2000)
-	music.baDing.stop()
+	music.startMelody(music.builtInMelody(Melodies.baDing), MelodyOptions.Twice)
     	pins.D35.digitalWrite(true);
 	pause(5000);
 	pixel.setColor(0x007fff);//azul
