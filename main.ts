@@ -50,8 +50,8 @@ namespace electrophoresis {
 				pixel.setColor(0xffff00);//amarillo
 				pause(5000);	
            			pins.D34.digitalWrite(true);
-				pixel.setColor(0xffffff);//BLANCO
 				pause(5000);
+				pixel.setColor(0xffffff);//BLANCO
 				break;
 			}
         	}
