@@ -110,6 +110,9 @@ namespace electrophoresis {
 			break;
 		}	   
     	} 
+	music.baDing.play()
+	pause(2000)
+	music.baDing.stop()
     	pins.D35.digitalWrite(true);
 	pause(5000);
 	pixel.setColor(0x007fff);//azul
