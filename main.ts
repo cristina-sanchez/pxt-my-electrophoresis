@@ -42,7 +42,7 @@ namespace electrophoresis {
 				pixel.setColor(0x007fff);//azul
 				pause(5000);
 				pins.D34.digitalWrite(false); 
-				pause(1000);
+				pause(5000);
 				pixel.setColor(0xffffff);//BLANCO
 				break;
 			}
