@@ -42,7 +42,7 @@ namespace electrophoresis {
 				pixel.setColor(0x007fff);//azul
 				pause(5000);
 				pins.D34.digitalWrite(false); 
-				pause(5000);
+				pause(1000);
 				pixel.setColor(0xffffff);//BLANCO
 				break;
 			}
@@ -70,7 +70,7 @@ namespace electrophoresis {
 		case timerunning.oneminute: {
 			pixel.setColor(0xff0000);//rojo
 			pins.D35.digitalWrite(false);
-			pause(30*1000);
+			pause(60*1000);
 			pixel.setColor(0xffff00);//amarillo
 			break;
 		}
@@ -112,9 +112,10 @@ namespace electrophoresis {
 		}
 	pixel.setColor(0xffffff);//BLANCO	   
     	} 
-    	//pins.D35.digitalWrite(true);
+    	pins.D35.digitalWrite(true);
+	pause(1000);
 	pixel.setColor(0x007fff);//azul
-	pause(30*1000);
+	
     }
 
     // note that Caml casing yields lower case
