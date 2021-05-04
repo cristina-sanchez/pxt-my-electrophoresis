@@ -35,24 +35,25 @@ namespace electrophoresis {
      //% block="Turn %start the electrophoresis" blockGap=8
      //% weight=100
      export function start_electrophoresis(start:on_off):void{
-	pixel.setColor(0xff0000)//rojo
-	pause(5000)
-	     
+	pixel.setColor(0xff0000);//rojo
+	pause(5000);
         	switch (start){
-	   		case on_off.turnon:
-				pixel.setColor(0x007fff)//azul
-				pause(5000)
-				pins.D34.digitalWrite(false) 
-				pixel.setColor(0xffffff)//BLANCO
-				pause(5000)
-            			;
-            		case on_off.turnoff:
-				pixel.setColor(0xffff00)//amarillo
-				pause(5000)	
-           			pins.D34.digitalWrite(true) 	
-				pixel.setColor(0xffffff)//BLANCO
-				pause(5000)
-				;
+	   		case on_off.turnon: {
+				pixel.setColor(0x007fff);//azul
+				pause(5000);
+				pins.D34.digitalWrite(false); 
+				pixel.setColor(0xffffff);//BLANCO
+				pause(5000);
+            			break;
+			}
+            		case on_off.turnoff: {
+				pixel.setColor(0xffff00);//amarillo
+				pause(5000);	
+           			pins.D34.digitalWrite(true);
+				pixel.setColor(0xffffff);//BLANCO
+				pause(5000);
+				break;
+			}
         	}
           
      }
@@ -66,46 +67,51 @@ namespace electrophoresis {
     //% weight=90
     export function time_electrophoresis(time: timerunning): void {
     	switch (time){
-		case timerunning.oneminute:
-			pins.D35.digitalWrite(false)
-			pixel.setColor(0xff0000)
-			pause(60*1000)
-			pixel.setColor(0xffff00)
-			;
-		case timerunning.thirtyminutes:
-			pins.D35.digitalWrite(false)
-			pause(30*60*1000)
-			;
-		case timerunning.thirtyfiveminutes:
-			pins.D35.digitalWrite(false)
-			pause(35*60*1000)
-			;
-		case timerunning.fortyminutes:
-			pins.D35.digitalWrite(false)
-			pause(40*60*1000)
-			;
-		case timerunning.fortyfiveminutes:
-			pins.D35.digitalWrite(false)
-			pause(45*60*1000)
-			;
-		case timerunning.fiftyminutes:
-			pins.D35.digitalWrite(false)
-			pause(50*60*1000)
-			;
-		case timerunning.fiftyfiveminutes:
-			pins.D35.digitalWrite(false)
-			pause(55*60*1000)
-			;
-		case timerunning.sixtyminutes:
-			pins.D35.digitalWrite(false)
-			pause(60*60*1000)
-			;
-	pixel.setColor(0xffffff)//BLANCO	   
+		case timerunning.oneminute: {
+			pins.D35.digitalWrite(false);
+			pixel.setColor(0xff0000);
+			pause(60*1000);
+			pixel.setColor(0xffff00);
+			break;
+		}
+		case timerunning.thirtyminutes: {
+			pins.D35.digitalWrite(false);
+			pause(30*60*1000);
+			break;
+		}
+		case timerunning.thirtyfiveminutes: {
+			pins.D35.digitalWrite(false);
+			pause(35*60*1000);
+			break;
+		case timerunning.fortyminutes: {
+			pins.D35.digitalWrite(false);
+			pause(40*60*1000);
+			break;
+		}
+		case timerunning.fortyfiveminutes: {
+			pins.D35.digitalWrite(false);
+			pause(45*60*1000);
+			break;
+		}
+		case timerunning.fiftyminutes: {
+			pins.D35.digitalWrite(false);
+			pause(50*60*1000);
+			break;
+		}
+		case timerunning.fiftyfiveminutes: {
+			pins.D35.digitalWrite(false);
+			pause(55*60*1000);
+			break;
+		}
+		case timerunning.sixtyminutes: {
+			pins.D35.digitalWrite(false);
+			pause(60*60*1000);
+			break;
+		}
+	pixel.setColor(0xffffff);//BLANCO	   
     	} 
-	
-    	pins.D35.digitalWrite(true)
-	pixel.setColor(0x007fff)
-    	
+    	pins.D35.digitalWrite(true);
+	pixel.setColor(0x007fff);
     }
 
     // note that Caml casing yields lower case
