@@ -113,7 +113,7 @@ namespace electrophoresis {
 	pixel.setColor(0xffffff);//BLANCO	   
     	} 
     	pins.D35.digitalWrite(true);
-	pause(1000);
+	pause(5000);
 	pixel.setColor(0x007fff);//azul
 	
     }
