@@ -42,9 +42,9 @@ namespace electrophoresis {
 				pixel.setColor(0x007fff);//azul
 				pause(5000);
 				pins.D34.digitalWrite(false); 
-				pixel.setColor(0xffffff);//BLANCO
 				pause(5000);
-            			break;
+				pixel.setColor(0xffffff);//BLANCO
+				break;
 			}
             		case on_off.turnoff: {
 				pixel.setColor(0xffff00);//amarillo
@@ -68,8 +68,8 @@ namespace electrophoresis {
     export function time_electrophoresis(time: timerunning): void {
     	switch (time){
 		case timerunning.oneminute: {
-			pins.D35.digitalWrite(false);
 			pixel.setColor(0xff0000);//rojo
+			pins.D35.digitalWrite(false);
 			pause(30*1000);
 			pixel.setColor(0xffff00);//amarillo
 			break;
