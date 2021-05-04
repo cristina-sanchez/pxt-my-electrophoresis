@@ -43,7 +43,6 @@ namespace electrophoresis {
 				pause(5000);
 				pins.D34.digitalWrite(false); 
 				pause(5000);
-				pixel.setColor(0xffffff);//BLANCO
 				break;
 			}
             		case on_off.turnoff: {
@@ -109,8 +108,7 @@ namespace electrophoresis {
 			pins.D35.digitalWrite(false);
 			pause(60*60*1000);
 			break;
-		}
-	pixel.setColor(0xffffff);//BLANCO	   
+		}	   
     	} 
     	pins.D35.digitalWrite(true);
 	pause(5000);
