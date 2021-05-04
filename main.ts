@@ -83,6 +83,7 @@ namespace electrophoresis {
 			pins.D35.digitalWrite(false);
 			pause(35*60*1000);
 			break;
+		}
 		case timerunning.fortyminutes: {
 			pins.D35.digitalWrite(false);
 			pause(40*60*1000);
